@@ -3,10 +3,59 @@
   "version": "1.0.0",
   "description": "Grid Samples",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "serve": "serve",
+    "viewserver": "node --experimental-modules scripts/run-viewserver.mjs"
+  },
+  "dependencies": {
+    "@heswell/data": "^1.0.9",
+    "@heswell/data-remote": "^1.0.6",
+    "@heswell/ingrid": "^1.0.18",
+    "@heswell/ingrid-extras": "^1.0.8",
+    "@heswell/inlay": "^1.0.8",
+    "@heswell/inlay-extras": "^1.0.5",
+    "@heswell/server-core": "^1.0.0",
+    "@heswell/ui-controls": "^1.0.10",
+    "@heswell/utils": "^1.0.9",
+    "@heswell/viewserver": "^1.0.28",
+    "d3-array": "^2.2.0",
+    "dygraphs": "^2.1.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-motion": "^0.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "babel-loader": "^8.0.6",
+    "chalk": "^2.4.2",
+    "classnames": "^2.2.6",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^4.0.0-beta.8",
+    "mini-css-extract-plugin": "^0.8.0",
+    "pnp-webpack-plugin": "^1.5.0",
+    "react-dev-utils": "^9.0.3",
+    "serve": "^11.2.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^2.0.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-manifest-plugin": "^2.0.4"
+  }
 }
